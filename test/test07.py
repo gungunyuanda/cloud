@@ -28,5 +28,4 @@ with tf.Session() as sess:
             sess.run(train_step, feed_dict={x: batch_xs, y: batch_ys})
 
         scc = sess.run(accuracy, feed_dict={x: mnist.test.images, y: mnist.test.labels})
-        print("Iter: " + str(_), end=", ")
-        print("Accuracy: " + str(scc))
+        print "Iter: " + str(_) + "Accuracy: " + str(scc)
